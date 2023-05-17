@@ -1,0 +1,252 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size: 63.5%;
+}
+
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+
+.header{
+    position: fixed;
+    padding: 2rem 7%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a{
+    position: relative;
+    margin-right: 3.5rem;
+    font-weight: 550;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.navbar a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: rgb(216, 216, 216);
+
+}
+
+.bx-moon{
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.home{
+    min-height: 500vh;
+    padding: 25rem 7% 2rem;
+   
+}
+
+
+.intro
+{
+    display: block;
+    align-items: center;
+    max-width: 44rem;
+}
+
+
+.intro h3{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    color:  #110638;
+    font-family: 'Bruno Ace SC', cursive;
+    
+} 
+
+
+.intro h1{
+    font-size: 6rem;
+    color: #012730;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-bottom: .3rem;
+}
+
+
+.intro p{
+    font-size: 1.2rem;
+    color: rgb(7, 7, 7);
+}
+
+
+.intro .social a{
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 4rem;
+    border: black;
+     background: transparent;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem rgb(128, 128, 128);
+    border: 1.5px solid rgb(117, 86, 255);
+    margin: 2rem 1.5rem 3rem 0;
+    color: rgb(117, 86, 255);
+    transition: .5s ease;
+}
+
+
+.intro .social a:hover{
+    color: #110638;
+    background: #e2def3;
+}
+
+
+.intro .cv{
+    height: 45px;
+    width: 16rem;
+    padding: 2px;
+    border-radius: 2rem;
+    border: none;
+    background-color: #4343437e;
+    box-shadow: 0 .2rem .5rem rgb(128, 128, 128);
+    transition: .5s ease;
+}
+
+.intro .cv a{
+    color: #000000;
+    font-weight: 600;
+    
+}
+
+.intro .cv:hover{
+    background:transparent;
+    color: white;
+}
+
+.home .container{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 768px;
+    height: 768px;
+    /* background: red; */
+    overflow: hidden;
+    pointer-events: none;    
+}
+
+.home .container .box{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 768px;
+    height: 768px;
+    /* background: rgb(76, 0, 255); */
+    /* overflow: hidden; */
+    /* pointer-events: none;    */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .box .pro{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(calc(360deg/4*var(--i)));
+    transform-origin: 384px;
+    left: 0;
+    background: rgb(255, 255, 255);
+    padding: 13px 0;
+}
+
+.home .container .box .pro:nth-child(1) i{
+    margin-right: 15px;
+}
+
+.home .container .box .pro:nth-child(2),
+.home .container .box .pro:nth-child(4){
+    padding-bottom: 20px;
+}
+
+.home .container .box .pro i{
+    font-size: 3.5rem;
+}
+
+.home .container .box .pro h3{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #0049B7
+}
+
+.home .container .box .circle{
+    height: 560px;
+    width: 560px;
+    /* background:red; */
+    border: 3px rgb(0, 100, 249) solid;
+    border-radius: 50%;
+}
+
+.home .container .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid  #00DDFF;
+    border-right: 384px solid  #00DDFF;
+    border-left: 384px solid transparent;
+    border-bottom: 384px solid  #00DDFF;
+}
+
+.home .img img{
+    top: -55px;
+    position: absolute;
+    right: -200px;
+    pointer-events: none;
+    width:56.5%;
+    height: 109%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
